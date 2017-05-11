@@ -6,7 +6,7 @@ use AgendaWeb\Repositories\CategoriaRepository;
 use Illuminate\Http\Request;
 use AgendaWeb\Http\Requests;
 use AgendaWeb\Http\Controllers\Controller;
-
+use Faker\Generator;
 class CategoriasController extends Controller
 {
     //
@@ -31,6 +31,7 @@ class CategoriasController extends Controller
     }
 
     public function insert(Request $request){
+  
        $data = $request->all();
       $this->repository->create($data);
 

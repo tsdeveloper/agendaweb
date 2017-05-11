@@ -12,14 +12,15 @@ class CategoriaTableSeeder extends Seeder
      */
     public function run()
     {
+        factory(Categoria::class,10)->create();
         //
-        factory(Categoria::class,10)->create()->each(function ($p)
-        {
-        for($i=0; $i<=5; $i++){
-           $p->participantes()->save(factory(Participante::class)->make());    
-        }
+        // factory(Categoria::class,10)->create()->each(function ($p)
+        // {
+        // for($i=0; $i<=5; $i++){
+        //    $p->participantes()->save(factory(Participante::class)->make());    
+        // }
 
         
-        });
+        // });
     }
 }

@@ -31,7 +31,8 @@ $factory->define(AgendaWeb\Models\Participante::class, function(Faker\Generator 
 
 $factory->define(AgendaWeb\Models\Categoria::class, function(Faker\Generator $faker){
     return [
-        'descricao' => $faker->jobTitle,
+        'cdCategoria' => $faker->randomNumber($nbDigits = NULL, $strict = false),
+        'noCategoria' => $faker->jobTitle,
         
     ];
 });

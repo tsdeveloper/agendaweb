@@ -25,8 +25,8 @@
     <tbody>
      @foreach($categorias as $categoria)
         <tr>
-            <td>{{$categoria->id}}</td>
-            <td>{{$categoria->descricao}}</td>
+            <td>{{$categoria->cdCategoria}}</td>
+            <td>{{$categoria->noCategoria}}</td>
             <td>
             <a href="#" class="btn btn-info">Editar</a>
             <a href="#" class="btn btn-danger">Excluir</a>

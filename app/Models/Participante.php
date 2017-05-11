@@ -11,12 +11,16 @@ class Participante extends Model implements Transformable
     use TransformableTrait;
 
    //
+   protected $table='tbParticipantes';
+    protected $primaryKey = 'cdParticipante';
+
     protected $fillable=[
-        'nome',
-        'cpf',
-        'email',
-        'categoria_id',
-         'user_id',
+        'cdParticipante',
+        'cdCredencial',
+        'noParticipante',
+        'nuCPFCNPJ',
+         'dsEndereco',
+         'dsEmail'
         
 
     ];

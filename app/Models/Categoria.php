@@ -9,9 +9,12 @@ use Prettus\Repository\Traits\TransformableTrait;
 class Categoria extends Model implements Transformable
 {
     use TransformableTrait;
+    protected $table= 'tbCategorias';
+    protected $primaryKey = 'cdCategoria';
 
     protected $fillable=[
-        'descricao'
+        'cdCategoria',
+        'noCategoria'
 
     ];
 
